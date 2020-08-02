@@ -14,6 +14,7 @@ def test_function(entry):
 def format_response(weather):
     try:
         name = weather['name']
+        print(name)
         desc = weather['weather'][0]['description']
         temp = weather['main']['temp']
         final_str = str(name) + ' ' + str(desc) + ' ' + str(temp)
